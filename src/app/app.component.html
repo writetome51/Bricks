@@ -1,11 +1,9 @@
+<!-- Has to be a recursive component   -->
 
-	<div>hello</div>
+	<div *ngFor="let brick of bricks;"
+		 (click)="toggleHighlight($event, brick)" [class.highlighted]="brick.highlighted">
 
-	<div>hello</div>
-
-	<div>hello</div>
-
-	<div>hello hello hello hello hello hello hello hello hello hello hello hello hello hello
-		hello hello hello hello hello hello hello hello hello hello</div>
+		<app-root *ngIf="Array.isArray(brick)"  [brick]="brick"></app-root>
+	</div>
 
 
