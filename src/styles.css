@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+app-root{
+    display: block;
+    width: 100%;
+}
+div {
+    display: inline-block;  /*  This should be default display for all divs!    */
+    border: 2px solid #99ff99; /*   default for selected div   */
+    width: 300px;  /*  by default, width will be fixed, unless user specifies something else   */
+    margin:1px;
+}
