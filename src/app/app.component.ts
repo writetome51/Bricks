@@ -8,8 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
     title = 'UIBuilder';
-    @Input() brick: any;
-    bricks = [{highlighted: false}, {highlighted: false}];
+    @Input()  bricks = [{highlighted: false}, {highlighted: false}, {highlighted: false, bricks: [{highlighted: false}]}];
     highlightedBrickIndex = -1;
     Array = Array;
 

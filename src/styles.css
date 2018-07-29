@@ -6,7 +6,7 @@ app-root {
 
 div {
     display: inline-block; /*  This should be default display for all divs!    */
-  /*  border: 2px solid black; /*   default for selected div   */
+    border: 2px solid black; /*   default for selected div   */
     width: 300px; /*  by default, width will be fixed, unless user specifies something else   */
     height: 300px;
     margin: 1px;
