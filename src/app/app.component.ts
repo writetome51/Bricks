@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -7,8 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 
 export class AppComponent {
+
     title = 'UIBuilder';
-    @Input()  containers = [{}, {}, {containers: [{}] } ];
+    @Input() containers = [{}, {}, {containers: [{}]}];
     highlightedContainerIndex = -1;
 
 
