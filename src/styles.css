@@ -6,12 +6,12 @@ app-root {
 
 div {
     display: inline-block; /*  This should be default display for all divs!    */
-    border: 2px solid black; /*   default for selected div   */
+    border: 2px solid black; 
     width: 300px; /*  by default, width will be fixed, unless user specifies something else   */
     height: 300px;
     margin: 1px;
 }
 
 .highlighted {
-    outline: 3px dashed #99ff99;
+    outline: 3px dashed #99ff99;  /*   default for selected div   */
 }
