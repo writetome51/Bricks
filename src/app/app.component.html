@@ -1,8 +1,1 @@
-<!-- Has to be a recursive component   -->
-
-<div *ngFor="let container of containers">
-	<!-- If nested container exists, display it:   -->
-	<ng-container *ngIf="container.containers">
-		<div *ngFor="let container of containers"></div>
-	</ng-container>
-</div>
+<builder></builder>

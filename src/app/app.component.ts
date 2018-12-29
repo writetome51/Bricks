@@ -9,9 +9,5 @@ import { Component, Input } from '@angular/core';
 
 export class AppComponent {
 
-    title = 'UIBuilder';
-    @Input() containers = [{}, {}, {containers: [{}]}];
-    highlightedContainerIndex = -1;
-
 
 }
