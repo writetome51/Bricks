@@ -10,9 +10,12 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class BuilderComponent implements OnInit {
 
-    title = 'UIBuilder';
     @Input() containers = [
-        {}, {}, {containers: [{}, {}, {containers: [{}]}]}
+        {tag: 'div'},
+        {tag: 'section'},
+        {
+            tag: 'header', containers: [{}, {}, {containers: [{}]}]
+        }
     ];
 
     highlightedContainerIndex = -1;

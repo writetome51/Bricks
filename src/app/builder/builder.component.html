@@ -1,8 +1,24 @@
 <!-- Has to be a recursive component   -->
 
 <div *ngFor="let container of containers">
-	<!-- If nested container exists, display it:   -->
 	<ng-container *ngIf="container.containers">
+
+		<!--    component recursively calls itself    -->
 		<builder [containers]="container.containers"></builder>
+
 	</ng-container>
 </div>
+
+<!--------------------------------------------------    
+To simplify the logic for this template, make it a rule that the user can't have 
+a non-container element adjacent to a container element.  For example, this 
+is not allowed:
+
+	<div>content...</div>
+	<p>A paragraph.</p>
+
+But this is allowed:
+
+	<div>content...</div>
+	<div><p>A paragraph.</p></div>
+------------------------------------------------->
